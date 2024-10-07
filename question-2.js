@@ -4,3 +4,15 @@ const inventory = [
   { name: "Banana", price: 10, quantity: 50 },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+let sumTotal;
+
+inventory[0].quantity = 200;
+
+inventory.push({ name: "Orange", price: 20, quantity: 300 });
+
+sumTotal =
+  inventory[0].price * inventory[0].quantity +
+  inventory[1].price * inventory[1].quantity +
+  inventory[2].price * inventory[2].quantity;
+
+console.log(sumTotal);
